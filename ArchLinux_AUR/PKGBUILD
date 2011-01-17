@@ -1,0 +1,27 @@
+pkgname=playframework
+pkgver=1.1
+pkgrel=1
+pkgdesc="An open source web application framework in Java which follows the MVC pattern."
+url="http://www.playframework.org/"
+arch=('any')
+license=('APACHE')
+depends=('java-environment')
+backup=()
+source=(http://download.playframework.org/releases/play-${pkgver}.zip)
+md5sums=('54513b11dc4eacd68d01f5c59bb8ec97')
+
+provides=()
+conflicts=()
+
+package() {
+  mkdir -p $pkgdir/usr/share/
+  mkdir -p $pkgdir/usr/bin/
+  cp -R $srcdir/play-${pkgver} $pkgdir/usr/share/playframework-${pkgver}
+  
+  # the python env is python2 on Arch Linux
+  sed -i 's/\#!\/usr\/bin\/env python/\#!\/usr\/bin\/env python2/' $pkgdir/usr/share/playframework-${pkgver}/play
+  
+  ln -s $pkgdir/usr/share/playframework-${pkgver}/play $pkgdir/usr/bin/play
+  install -d $pkgdir/usr/bin
+  install -d $pkgdir/usr/share
+}

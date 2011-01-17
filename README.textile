@@ -1,0 +1,27 @@
+h1. The context
+
+Linux users enjoy by package management and repositories.
+We are lazy of browsing all the internet just to find one binary installation...
+
+Unfortunately, there are no ready package for Play Framework.
+
+I've so begun to make some of them, specially for ArchLinux.
+If anyone want to share other distribution's packages, feel free to contribute.
+
+
+h1. What distribution supported ?
+
+h2. Work in progress :
+
+ * ArchLinux
+
+h2. Ready to install (see procedure bellow) :
+
+(soon)
+
+
+h1. Usages (installation procedure)
+
+h2. ArchLinux (soon):
+
+    *yaourt -S playframework*

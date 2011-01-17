@@ -12,6 +12,7 @@ md5sums=('54513b11dc4eacd68d01f5c59bb8ec97')
 
 provides=()
 conflicts=()
+optdepends=('apache-ant: A java-based build tool used to compile play framework.')
 
 package() {
   mkdir -p $pkgdir/usr/share/

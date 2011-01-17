@@ -16,8 +16,10 @@ optdepends=('apache-ant: A java-based build tool used to compile play framework.
 
 package() {
   mkdir -p $pkgdir/usr/share/
+  mkdir -p $pkgdir/usr/share/licenses/$pkgname
   mkdir -p $pkgdir/usr/bin/
   cp -R $srcdir/play-${pkgver} $pkgdir/usr/share/playframework-${pkgver}
+  cp $srcdir/play-${pkgver}/COPYING $pkgdir/usr/share/licenses/$pkgname/LICENSE
   
   # the python env is python2 on Arch Linux
   sed -i 's/\#!\/usr\/bin\/env python/\#!\/usr\/bin\/env python2/' $pkgdir/usr/share/playframework-${pkgver}/play

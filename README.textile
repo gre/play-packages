@@ -7,9 +7,16 @@ I've so begun to make some of them, first for ArchLinux.
 
 h1. What distribution are supported ?
 
- * (soon) ArchLinux : *yaourt -S playframework*
+ * ArchLinux : *yaourt -S playframework*
 
 h1. Feel free to contribute
 
 If anyone want to share other distribution's packages, feel free to contribute.
 The best solution is a way to download the play framework zip during the installation. It's pretty simple with ArchLinux but I don't know if it's possible with all Linux distributions.
+
+h1. Support us
+
+h2. ArchLinux
+
+Please go to http://aur.archlinux.org/packages.php?ID=45541 and vote for the package to support it.
+With more votes, the package will move in [community] allowing more visibility :)

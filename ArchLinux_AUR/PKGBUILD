@@ -1,7 +1,7 @@
 # Maintainer: Gaetan Renaudeau <gre at zenexity dot com>
 pkgname=playframework
 pkgver=1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="An open source web application framework in Java which follows the MVC pattern."
 url="http://www.playframework.org/"
 arch=('any')

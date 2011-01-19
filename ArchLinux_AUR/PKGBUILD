@@ -25,7 +25,7 @@ package() {
   # the python env is python2 on Arch Linux
   patch $pkgdir/usr/share/playframework-${pkgver}/play $srcdir/python2fix.patch
   
-  ln -s $pkgdir/usr/share/playframework-${pkgver}/play $pkgdir/usr/bin/play
+  ln -s /usr/share/playframework-${pkgver}/play $pkgdir/usr/bin/play
   install -d $pkgdir/usr/bin
   install -d $pkgdir/usr/share
 }

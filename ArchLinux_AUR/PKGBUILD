@@ -1,7 +1,7 @@
 # Maintainer: Gaetan Renaudeau <gre at zenexity dot com>
 pkgname=playframework
 pkgver=1.1.1
-pkgrel=4
+pkgrel=5
 pkgdesc="An open source web application framework in Java which follows the MVC pattern."
 url="http://www.playframework.org/"
 arch=('any')
@@ -17,7 +17,8 @@ md5sums=('3a2a49cfcc0ea679c75d3c1cb34ec080'
 
 provides=()
 conflicts=()
-optdepends=('apache-ant: A java-based build tool used to compile play framework.')
+optdepends=('apache-ant: A java-based build tool used to compile play framework.'
+            'bash-completion: To have a bash completion on play command.')
 
 package() {
   mkdir -p $pkgdir/usr/share/

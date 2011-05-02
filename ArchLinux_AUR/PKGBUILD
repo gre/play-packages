@@ -10,7 +10,7 @@ depends=('jdk' 'python2')
 backup=()
 source=(http://download.playframework.org/releases/play-${pkgver}.zip 
         python2fix.patch)
-md5sums=('3a2a49cfcc0ea679c75d3c1cb34ec080' 
+md5sums=('6974014f265b16e926e5dd5587573fea' 
          '967a191ca673aec93546640002c794ab')
 
 provides=()

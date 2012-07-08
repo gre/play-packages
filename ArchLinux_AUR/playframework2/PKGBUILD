@@ -1,0 +1,29 @@
+# Maintainer: Gaetan Renaudeau <gre@zenexity.com>
+pkgname=playframework2
+pkgver=2.0.2
+pkgrel=1
+pkgdesc="Play 2.0 is a high-productivity Java and Scala web application framework that integrates the components and APIs you need for modern web application development."
+url="http://www.playframework.org/"
+arch=('any')
+license=('APACHE')
+depends=('java-environment')
+backup=()
+source=(http://download.playframework.org/releases/play-${pkgver}.zip)
+md5sums=('d1408ffca1f35cc89167e0717dd31069')
+
+provides=()
+conflicts=()
+optdepends=()
+
+package() {
+  mkdir -p $pkgdir/usr/share/
+  mkdir -p $pkgdir/usr/share/licenses/$pkgname
+  mkdir -p $pkgdir/usr/bin/
+
+  cp -R $srcdir/play-${pkgver} $pkgdir/usr/share/playframework-${pkgver}
+  cp $srcdir/play-${pkgver}/README.md $pkgdir/usr/share/licenses/$pkgname/LICENSE
+
+  ln -s /usr/share/playframework-${pkgver}/play $pkgdir/usr/bin/play2
+  install -d $pkgdir/usr/bin
+  install -d -m755 $pkgdir/usr/share
+}
